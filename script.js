@@ -18,8 +18,8 @@ function imagemAnterior(){
 
 mostrarImagem(imagemAtual)
 
-const botaoProximo = document.getElementById("")
-const botaoAnterior = document.getElementById("")
+const botaoProximo = document.getElementById("proximoBotao")
+const botaoAnterior = document.getElementById("anterBotao")
 
 botaoProximo.addEventListener("click", () => {
     proximaImagem()
