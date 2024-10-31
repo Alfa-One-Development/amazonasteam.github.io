@@ -7,24 +7,28 @@ function mostrarImagem(index) {
 }
 
 function proximaImagem() {
-    imagemAtual = (imagemAtual + 1) % imagens.length
-    mostrarImagem(imagemAtual)
+    imagemAtual = (imagemAtual + 1) % imagens.length;
+    mostrarImagem(imagemAtual);
+    let intervalo = setInterval (proximaImagem, 5000);
+
 }
 
 function imagemAnterior(){
-    imagemAtual = (imagemAtual - 1 + imagens.length) % imagens.length
-    mostrarImagem(imagemAtual)
+    imagemAtual = (imagemAtual - 1 + imagens.length) % imagens.length;
+    mostrarImagem(imagemAtual);
+    let intervalo =  setInterval (proximaImagem, 5000);
+
 }
 
-mostrarImagem(imagemAtual)
+mostrarImagem(imagemAtual);
 
-const botaoProximo = document.getElementById("proximoBotao")
-const botaoAnterior = document.getElementById("anterBotao")
+const botaoProximo = document.getElementById("proximoBotao");
+const botaoAnterior = document.getElementById("anterBotao");
 
 botaoProximo.addEventListener("click", () => {
-    proximaImagem()
+    proximaImagem();
 });
 
 botaoAnterior.addEventListener("click", () => {
-    imagemAnterior()
+    imagemAnterior();
 });
