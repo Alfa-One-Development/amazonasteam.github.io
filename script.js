@@ -1,4 +1,4 @@
-const imagens = document.querySelectorAll("#slider img")
+const imagens = document.querySelectorAll("#slider")
 let imagemAtual = 0
 
 function mostrarImagem(index) {
@@ -9,15 +9,11 @@ function mostrarImagem(index) {
 function proximaImagem() {
     imagemAtual = (imagemAtual + 1) % imagens.length;
     mostrarImagem(imagemAtual);
-    let intervalo = setInterval (proximaImagem, 5000);
-
 }
 
 function imagemAnterior(){
     imagemAtual = (imagemAtual - 1 + imagens.length) % imagens.length;
     mostrarImagem(imagemAtual);
-    let intervalo =  setInterval (proximaImagem, 5000);
-
 }
 
 mostrarImagem(imagemAtual);
@@ -32,3 +28,5 @@ botaoProximo.addEventListener("click", () => {
 botaoAnterior.addEventListener("click", () => {
     imagemAnterior();
 });
+
+let intervalo = setInterval (proximaImagem, 5000);
