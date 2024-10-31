@@ -19,3 +19,39 @@ header, footer {
         width: 12%;
     }
 }
+
+#slider{
+    width: 80%;
+    height: 80%;
+    overflow:hidden;
+    position: relative;
+}
+
+#slider img{
+    width: 50%;
+    height: 50%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: darkred;
+    color: darkslategrey;
+    border: none;
+    padding: 1vw;
+    cursor: pointer;
+    border-radius: 2.5vw;
+}
+
+#PrevPic {
+    left: 1vw;
+}
+
+#NextPic {
+    right: 1vw;
+}
