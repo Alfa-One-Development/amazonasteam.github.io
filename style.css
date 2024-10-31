@@ -5,7 +5,7 @@ body {
     align-items: center;
 }
 
-header {
+header, footer {
     width: 75%;
     background-color: antiquewhite;
     border: 0.2vw solid;
@@ -16,6 +16,6 @@ header {
     align-items: center;
 
     img {
-        width: 15%;
+        width: 12%;
     }
 }
