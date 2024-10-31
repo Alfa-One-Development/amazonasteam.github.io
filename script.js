@@ -1,4 +1,4 @@
-const imagens = document.querySelectorAll("#slider img")
+const imagens = document.querySelectorAll("")
 let imagemAtual = 0
 
 function mostrarImagem(index) {
@@ -18,8 +18,8 @@ function imagemAnterior(){
 
 mostrarImagem(imagemAtual)
 
-const botaoProximo = document.getElementById("proximoBotao")
-const botaoAnterior = document.getElementById("anterBotao")
+const botaoProximo = document.getElementById("NextPic")
+const botaoAnterior = document.getElementById("PrevPic")
 
 botaoProximo.addEventListener("click", () => {
     proximaImagem()
